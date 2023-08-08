@@ -1,0 +1,11 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/ShopOnline.Api/bin/Debug/net6.0
+/ShopOnline.Api/obj
+/ShopOnline.Models/bin/Debug/net6.0
+/ShopOnline.Models/obj
+/ShopOnline.Web/bin/Debug/net6.0
+/ShopOnline.Web/obj
