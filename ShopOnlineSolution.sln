@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnline.Api", "ShopOnlin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnline.Models", "ShopOnline.Models\ShopOnline.Models.csproj", "{EA9F5D97-5487-49EE-9283-11A6181BA37F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazorise.ShopOnline", "Blazorise.ShopOnline\Blazorise.ShopOnline.csproj", "{CE812A20-6C09-475B-8961-03EC3510D675}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EA9F5D97-5487-49EE-9283-11A6181BA37F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA9F5D97-5487-49EE-9283-11A6181BA37F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA9F5D97-5487-49EE-9283-11A6181BA37F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE812A20-6C09-475B-8961-03EC3510D675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE812A20-6C09-475B-8961-03EC3510D675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE812A20-6C09-475B-8961-03EC3510D675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE812A20-6C09-475B-8961-03EC3510D675}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
