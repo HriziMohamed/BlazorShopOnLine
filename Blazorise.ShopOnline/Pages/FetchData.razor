@@ -13,7 +13,7 @@
 }
 else
 {
-    <table class="table">
+   @* <table class="table">
         <thead>
             <tr>
                 <th>Date</th>
@@ -34,12 +34,20 @@ else
             }
         </tbody>
     </table>
-
-    <DataGrid TItem="WeatherForecast" Data="forecasts">
-        <DataGridColumn TItem="WeatherForecast" Field="@nameof(WeatherForecast.Date)"  Caption="Date"></DataGridColumn>
-        <DataGridColumn TItem="WeatherForecast" Field="@nameof(WeatherForecast.TemperatureC)" Caption="Temp(C)"></DataGridColumn>
-        <DataGridColumn TItem="WeatherForecast" Field="@nameof(WeatherForecast.TemperatureF)" Caption="Temp(F)"></DataGridColumn>
-        <DataGridColumn TItem="WeatherForecast" Field="@nameof(WeatherForecast.Summary)" Caption="Summary"></DataGridColumn>
+*@
+    <DataGrid TItem="WeatherForecast" Data="forecasts" Filterable="true" Sortable="true" Editable="true" ShowPager="true" PageSize="3">
+        <DataGridCommandColumn TItem="WeatherForecast">
+            <NewCommandTemplate>
+                <Button Color="Color.Success" Clicked="@context.Clicked">New</Button>
+            </NewCommandTemplate>
+            <EditCommandTemplate>
+                <Button Color="Color.Primary" Clicked="@context.Clicked">Edit</Button>
+            </EditCommandTemplate>
+        </DataGridCommandColumn>
+        <DataGridColumn TItem="WeatherForecast" Field="@nameof(WeatherForecast.Date)"  Caption="Date" Editable="true"></DataGridColumn>
+        <DataGridColumn TItem="WeatherForecast" Field="@nameof(WeatherForecast.TemperatureC)" Caption="Temp(C)" Editable="true"></DataGridColumn>
+        <DataGridColumn TItem="WeatherForecast" Field="@nameof(WeatherForecast.TemperatureF)" Caption="Temp(F)" Editable="true"></DataGridColumn>
+        <DataGridColumn TItem="WeatherForecast" Field="@nameof(WeatherForecast.Summary)" Caption="Summary" Editable="true"></DataGridColumn>
     </DataGrid>
 }
 
